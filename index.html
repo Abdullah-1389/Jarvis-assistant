@@ -1,0 +1,25 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jarvis Voice Assistant</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="chat-container">
+        <h2 class="title">🤖 Jarvis Assistant</h2>
+        <div id="chat-box"></div>
+        <div class="input-container">
+            <input type="text" id="user-input" placeholder="Speak or type your message..." autocomplete="off" autofocus>
+            <button onclick="sendMessage()">Send</button>
+            <button onclick="startListening()" title="Voice Input">🎤</button>
+        </div>
+    </div>
+    <script src="/static/main.js"></script>
+</body>
+</html>
